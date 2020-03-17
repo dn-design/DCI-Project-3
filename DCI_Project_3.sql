@@ -20,7 +20,7 @@ WHERE e.salary > (SELECT avg(e.salary) FROM hr.employees e)
 ORDER BY e.salary desc
 ;
 
---Question 4: What month generates the most sales, and what sells the most in those months?
+--Question 2: What month generates the most sales, and what sells the most in those months?
 
 SELECT p.prod_name, t.calendar_month_name, sum(s.amount_sold)
 FROM sh.times t
